@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <div className='container'>
-      <App />
+      <App  defaultCity={'Paris'}/>
       <small> <a href="https://github.com/cweet-dreams/weather-react-ui"> Open-source code </a> by Svetlana Apolokhova</small>
     </div>
   </React.StrictMode>
