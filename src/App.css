@@ -29,12 +29,9 @@ ul {
   padding-left: 9px;
   padding-top: 6px;
 }
-
-.weather-info img {
-  height: 60px;
-  width: 60px;
+.icon-main{
+ width: 60px;
 }
-
 .weather-info strong {
   font-family: Google Sans, arial, sans-serif;
   color: #202124;

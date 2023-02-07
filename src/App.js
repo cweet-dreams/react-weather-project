@@ -7,9 +7,9 @@ function App(props) {
   const [weatherData, setWeatherData] = useState({ready:false});
   const [city, setCity] = useState(props.defaultCity);
   function handleResponse(response) {
-       setWeatherData({
+    setWeatherData({
       ready: true,
-      icon: 'https://ssl.gstatic.com/onebox/weather/64/sunny.png',
+      icon: response.data.weather[0].icon,
       descripton: response.data.weather[0].description,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,

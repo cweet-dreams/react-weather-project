@@ -1,16 +1,21 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import UnitConverse from "./UnitConverse";
+import AnimatedIcon from "./AnimatedIcon";
 
 export default function WeatherInfo(props) {
     return (
         <div className="weather-info">
             <div className="row">
                 <div className="col-6 d-flex">
-                    <img alt={props.info.descripton} src={props.info.icon} />
-                    <strong>{Math.round(props.info.temperature)}</strong>
-                    <span className="units">
-                    <div className="active-unit">°C </div>
-                    </span>
+                    <div className="icon-main">
+                    <AnimatedIcon code={props.info.icon}/>     
+                    </div>               
+                    {/* //icon added directly from openweather site
+                    <img alt={props.info.descripton} src={props.info.icon}/> */}
+
+                    <UnitConverse celsius= {Math.round(props.info.temperature)}/>
+                   
                     <ul className="weather-points">
                         <li>Humidity: {props.info.humidity}%</li>
                         <li>Wind: {props.info.wind} km/h</li>
