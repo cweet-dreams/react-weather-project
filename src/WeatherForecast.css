@@ -1,0 +1,12 @@
+.weather-forecast {
+    margin: 20px 0;
+    text-align: center;
+    color: #000;
+}
+.max-temperature {
+    font-size: 14px;
+}
+.min-temperature {
+    font-size: 14px;
+    opacity: 0.7;
+}
