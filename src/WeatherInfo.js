@@ -9,12 +9,14 @@ export default function WeatherInfo(props) {
             <div className="row">
                 <div className="col-6 d-flex">
                     <div className="icon-main">
-                    <AnimatedIcon code={props.info.icon}/>     
+                    <AnimatedIcon code={props.info.icon} size={60}/>     
                     </div>               
                     {/* //icon added directly from openweather site
                     <img alt={props.info.descripton} src={props.info.icon}/> */}
+                    <strong>{Math.round(props.info.temperature)}</strong>
+                    <div className="units">°C</div>
 
-                    <UnitConverse celsius= {Math.round(props.info.temperature)}/>
+                    {/* <UnitConverse celsius= {Math.round(props.info.temperature)}/> */}
                    
                     <ul className="weather-points">
                         <li>Humidity: {props.info.humidity}%</li>

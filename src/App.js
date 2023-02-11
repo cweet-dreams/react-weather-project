@@ -7,10 +7,10 @@ import WeatherForecast  from './WeatherForecast';
 function App(props) {
   const [weatherData, setWeatherData] = useState({ready:false});
   const [city, setCity] = useState(props.defaultCity);
+
   
   function handleResponse(response) {
-    console.log(response);
-    setWeatherData({
+      setWeatherData({
       ready: true,
       icon: response.data.weather[0].icon,
       descripton: response.data.weather[0].description,

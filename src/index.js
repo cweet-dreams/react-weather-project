@@ -9,8 +9,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <div className='container'>
-      <App  defaultCity={'Paris'}/>
-      <small> <a href="https://github.com/cweet-dreams/weather-react-ui"> Open-source code </a> by Svetlana Apolokhova</small>
+      <App  defaultCity={'Kharkiv'}/>
+      <small>
+         <a href="https://github.com/cweet-dreams/weather-react-ui"> Open-source code </a> by 
+         <a href='https://www.linkedin.com/in/svetlana-apolokhova-b5772a56/'>Svetlana Apolokhova</a> and 
+         <a href='https://startling-griffin-bd3d6b.netlify.app/'>hosted on Netlify.</a>
+         </small>
     </div>
   </React.StrictMode>
 );
