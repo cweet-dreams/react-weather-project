@@ -1,6 +1,5 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
-import UnitConverse from "./UnitConverse";
 import AnimatedIcon from "./AnimatedIcon";
 
 export default function WeatherInfo(props) {
